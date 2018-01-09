@@ -1,0 +1,34 @@
+{
+  "name": "@dcos/copychars",
+  "version": "0.0.0",
+  "description": "",
+  "main": "./dist/copychars.js",
+  "module": "./src/copychars.js",
+  "scripts": {
+    "test": "jest src",
+    "build": "babel src --out-dir dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dcos-labs/copystr.git"
+  },
+  "keywords": [
+    "substr",
+    "v8",
+    "chrome",
+    "bug"
+  ],
+  "jest": {
+    "transform": {
+      "^.+\\.js?$": "babel-jest"
+    }
+  },
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-jest": "^21.2.0",
+    "babel-preset-env": "^1.6.1",
+    "jest": "^21.2.1",
+    "jest-cli": "^21.2.1"
+  }
+}
