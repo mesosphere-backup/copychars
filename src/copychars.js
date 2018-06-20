@@ -14,5 +14,7 @@ export default function copychars(string, start = 0, length) {
     return "";
   }
 
-  return (" " + string.substr(start, length)).substr(1);
+  const end = Number.isInteger(length) ? start + length : undefined;
+
+  return (" " + string.slice(start, end)).slice(1);
 }
